@@ -20,7 +20,7 @@
 }
 
 .cabecera{
-	background-image:url(../img/cabecera/california-1.jpg);
+	background-image:url();
 	background-repeat:no-repeat;
 	background-size:cover;
 	margin:auto;
@@ -60,7 +60,7 @@
 /*Cuerpo del documento*/
 
 .index{
-	background-image: url(../img/cabecera/ruta-66-2.jpg);
+	background-color: #E0E0E0;
 	background-size:cover;
 	background-repeat:no-repeat;
 	margin:auto;
@@ -72,8 +72,10 @@
 
 .navegacion{
 	width: auto;
-	height: 60px;
-    margin-left: 260px;
+  text-shadow: 4px 4px 4px #aaa;
+  top: 180px; 
+	height: 100px;
+    margin-left:auto;
     position: fixed;
 }
 .navegacion ul{
@@ -83,7 +85,7 @@
 
 /*Menú principal*/
 .menu >li{
-   display: inline-block;
+  
 
 }
 .menu > li > a{
@@ -122,39 +124,47 @@
 }
 /*seccion principal la cual contiene todo el contenido*/
 .contenido{
-	background-color: #C5CCB6;
+	background-color: #696A6E;
 	width:75%;
 	float: right;
-	margin-right: 100px;
+	margin-right: 90px;
     margin-top: 25px;
     border-radius: 10px;
-	padding: 20px 0px 20px 20px;
+	padding: 30px 0px 30px 30px;
 }
 
-/*Articulo Todoterrenos*/
+/*Seccion Desayuno*/
 /*imagen*/
-.todocamino{
+.Desayuno{
 	width:200px;
 	height:150px;
 	float:right;
 	margin-right:25px;
     padding: 10px 10px 10px 20px;
 }
-/*cabecera articulo todoterrenos*/
+/*Título sección Desayunos*/
 #Desayunos{
 	text-align:center;
-	font-size:30px;
-    color:#3B3833;
+  text-shadow: 4px 4px 4px #aaa;
+	font-size:32px;
+    color:#00557F;
     padding: 45px 0px 20px 0px;
-}
+  }
 
-/*Articulo Q7*/
+/*Articulo Muesli*/
 /*imagen*/
-.Q7{
-	width:350px;
+.Muesli{
+	width:300px;
 	height:300px;
 	float:right;
 	margin-right:25px;
+    padding: 40px 10px 10px 20px;
+}
+.VideoMuesli{
+	width:700px;
+	height:400px;
+	float:right;
+	margin-right:35px;
     padding: 40px 10px 10px 20px;
 }
 #q7{

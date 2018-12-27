@@ -29,14 +29,14 @@
 
 .rotulo{
 	position:absolute;
-  font-family: 'Pacifico', cursive;
+  	font-family: 'Pacifico', cursive;
 	color:#002B40;
 	text-align:Left;
 	font-size:35px;
 	top:30px;
 	width:center;
 	height:44px;
-  text-shadow: 4px 4px 4px #aaa;
+  	text-shadow: 4px 4px 4px #aaa;
 }
 
 .logo{

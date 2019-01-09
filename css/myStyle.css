@@ -1,253 +1,414 @@
-/*Ajustes generales*/
+/*Ajustes Generales*/
+* {
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    }
 
-*{
-	margin:auto;
-	padding:0px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: sans-serif, monospace ;
-
-}
-
-/* hoja de estilos ejercicio 02 de LMSGI creacion de página HTML 5 */
-/* Cabecera de página*/
-
-.portada{
-	height:180px;
-	border-color:1px solid black;
-
-}
-
-.cabecera{
-	background-image:url();
+/*Cabecera*/
+#Cabecera{
+	background-image:url(https://i.imgur.com/5baobas.png);
 	background-repeat:no-repeat;
-	background-size:cover;
-	margin:auto;
-	height:180px;
+	background-size:contain;
+  background-attachment:fixed;
+	height:250px;
+  width:100%;
+  }
+.Opacity{
+  width:100%;
+  height:80px;
+  background-color: lightgray;
+  opacity: 0.5;
+  Position:absolute;
+  top: 64px;
 }
-
 .rotulo{
-	position:absolute;
-  	font-family: 'Pacifico', cursive;
+	position:Relative;
+  font-family: 'Pacifico', cursive;
 	color:#002B40;
-	text-align:Left;
-	font-size:35px;
-	top:30px;
-	width:center;
-	height:44px;
-  	text-shadow: 4px 4px 4px #aaa;
-}
-
+	text-align:Center;
+	font-size:40px;
+	top:50px;
+  text-shadow: 5px 2px 10px #aaa;
+  }
 .logo{
-	position:absolute;
-	width:center;
+	position:relative;
+  text-align:Center;
 	height:52px;
 	top:40px;
-	left:500px;
-
-}
-.logo-car{
-	position:relative;
-	width:150px;
-	height:50px;
-	border-top-color: white ;
-	border-radius:10px 10px 10px 10px;
-
-
 }
 
-/*Cuerpo del documento*/
-
-.index{
-	background-color: #E0E0E0;
-	background-size:cover;
-	background-repeat:no-repeat;
-	margin:auto;
-	padding-bottom:20em;
-
+/*Menú Desplegable*/
+.MenuDesplegable{
+  width:100%;
+  height:150px;
+  overflow: hidden;
+  position: relative;
+}
+nav > ul{
+  list-style:none;
+  display:table;
+  width:100%;
+  background: lightgrey;
+  position:relative;
+}
+nav > ul li {
+ display: table-cell; 
+}
+/*Submenu*/
+nav > ul > li:hover > ul{
+  display:block;
+  height:100%;
+}
+nav > ul > li > ul{
+  display:block;
+  position:absolute;
+  background:lightgrey;
+  border-radius: 0px 0px 10px 10px;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul li a {
+  color: Black;
+  font-family: 'Pacifico', cursive;
+  font-size:20px;
+  display:block;
+  line-height: 20px;
+  padding:20px;
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+nav> ul > li > ul > li a:hover{
+  background:#174459;
+  color: white;
+}
+nav > ul > li > a span {
+  background:#174459;
+  display:block;
+  height:100%;
+  width:100%;
+  left:0;
+  position:absolute;
+  top:-55px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+nav > ul > li > a span .icon {
+  display:block;
+  line-height:60px;
+  color: white;
+  text-shadow: 5px 2px 10px black;
+}
+nav > ul > li > a:hover > span {
+  top:0;
 }
 
-/*Barra de navegacion*/
-
-.navegacion{
-	width: auto;
-  text-shadow: 4px 4px 4px #aaa;
-  top: 180px; 
-	height: 100px;
-    margin-left:auto;
-    position: fixed;
+/*Contenido General*/
+.Content_Gen{
+  width:100%;
 }
-.navegacion ul{
-	list-style: none;
-	text-decoration: none;
+.lateral_general{
+  background-color:lightgreen;
+  width: 24%;
+  left:76%;
+  position:absolute;
 }
-
-/*Menú principal*/
-.menu >li{
-  
-
-}
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	font-family: monospace;
-	text-decoration: none;
-	font-size: 30px;
-	font-weight: bolder;
-    color: #FFFFFF;
-}
-.menu > li > a:hover{
-	color: #C5D3A7;
-	transition: all 0.3s;
-}
-/*submenu*/
-.submenu{
-	position: absolute;
-	width: 160px;
-	margin-left: 20px;
-	visibility: hidden;
-    background: #8EACB6;
-    border-radius: 10px;
-}
-.submenu li a{
-	display: block;
-	padding: 10px 10px;
-	color: #3B3833;
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-	text-decoration: none;
-}
-.menu li:hover .submenu{
-  visibility: visible;
-}
-/*seccion principal la cual contiene todo el contenido*/
-.contenido{
-	background-color: #696A6E;
+.Contenido{
 	width:75%;
-	float: right;
-	margin-right: 90px;
-    margin-top: 25px;
-    border-radius: 10px;
-	padding: 30px 0px 30px 30px;
+  margin-top:20px;
 }
 
-/*Seccion Desayuno*/
-/*imagen*/
-.Desayuno{
-	width:200px;
-	height:150px;
-	float:right;
-	margin-right:25px;
-    padding: 10px 10px 10px 20px;
-}
-/*Título sección Desayunos*/
+/*Títulos Desplegables*/
+.TituloSec{
+  margin-top:10px;
+  width:100%;
+  }
 #Desayunos{
-	text-align:center;
-  text-shadow: 4px 4px 4px #aaa;
-	font-size:32px;
-    color:#00557F;
-    padding: 45px 0px 20px 0px;
-  }
-
-/*Articulo Muesli*/
-/*imagen*/
-.Muesli{
-	width:300px;
-	height:300px;
-	float:right;
-	margin-right:25px;
-    padding: 40px 10px 10px 20px;
-}
-.VideoMuesli{
-	width:700px;
-	height:400px;
-	float:right;
-	margin-right:35px;
-    padding: 40px 10px 10px 20px;
-}
-#q7{
-    text-align: center;
-    font-size:30px;
-    color:#3B3833;
-    padding: 55px 0px 20px 0px;
-}
-/*Articulo Jeep Commander*/
-/*imagen*/
-.commander{
-	width:350px;
-	height:300px;
-	float:right;
-	margin-right:25px;
-    padding: 55px 10px 10px 20px;
-}
-#jeep{
-    text-align: center;
-    font-size:30px;
-    color:#3B3833;
-    padding: 45px 0px 20px 0px;
-}
-/*Articulo Volkswagen Caravelle*/
-.caravelle{
-	width:350px;
-	height:300px;
-	float:right;
-	margin-right:25px;
-    padding: 55px 10px 10px 20px;
-}
-#volkswagen{
-    text-align: center;
-    font-size:30px;
-    color:#3B3833;
-    padding: 45px 0px 20px 0px;
-}
-/*Tablas stilos*/
-table{
-    border-collapse: collapse;
-    
-}
-td, th {
-  border: 1px solid #47484B;
-  text-align: left;
+  background-color:lightgrey;
+	text-align:Center;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 5px 2px 3px #aaa;
+  font-size:32px;
+  border-radius: 0px 50px 50px 0px;
+  color:#00557F;
   padding: 8px;
+  }
+#Comidas{
+  background-color:lightgrey;
+	text-align:Center;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 5px 2px 3px #aaa;
+  font-size:32px;
+  border-radius: 0px 50px 50px 0px;
+  color:#00557F;
+  padding: 8px;
+  }
+#Cenas{
+  background-color:lightgrey;
+	text-align:Center;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 5px 2px 3px #aaa;
+  font-size:32px;
+  border-radius: 0px 50px 50px 0px;
+  color:#00557F;
+  padding: 8px;
+  }
+#Postres{
+  background-color:lightgrey;
+	text-align:Center;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 5px 2px 3px #aaa;
+  font-size:32px;
+  border-radius: 0px 50px 50px 0px;
+  color:#00557F;
+  padding: 8px;
+  }
+.Pdescripcion{
+  background-color:lightgrey;
+	text-align:left;
+  font-family: 'arial', cursive;
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:17px;
+  color:#00557F;
+  padding: 13px;
+  border-radius: 0px 0px 50px 0px;
+  width:95%;
+   }
+.ImgParrafo{
+	width:220px;
+	height:180px;
+	float:left;
+	margin-right:25px;
+    padding: 15px 10px 10px 20px;
 }
 
-/*Estilos de Parrafos en Main*/
-p{
-    margin-left: 15px;
-    margin-right: 20px;
+/*Contenedor Recetas*/
+.receta{
+  width:100%;
+  padding: 20px;
 }
-br{
-    padding: 10px;
+
+/*Titulos de las recetas*/
+#Muesli{
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Porrigde {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Pavo {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Espaguettis {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Crema {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Sopa {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Bizcocho {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+#Flan {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:30px;
+  color:#00557F;
+ }
+.desc_recipe{
+  font-family: 'arial', cursive;
+  font-size:19px;
 }
-/*Separador articulos*/
-hr{
-    margin-top: 20px;
-    margin-bottom: 10px;
+
+/*Contenedor de recetas*/
+.nucleo{
+  width:100%;
+  height: auto;
+  overflow: hidden;
 }
-/*Pie de pagina*/
-.pie {
+
+/*Cuadro de la receta*/
+.lateral {
+    background-color: lightgrey;
+    float: left;
+    width: 33%;
+    height: auto;
     position: relative;
-    width: 100%;
-    height: 205px;
+    margin-right:10px;
+    margin-top: 2px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
 }
+.ImgReceta{
+	width:100%;
+	height:300px;
+	float:right;
+ }
+table{
+  background-color: white;
+  text-align: left;
+  width: 100%;
+  border-collapse:collapse;
+  border-radius: 5px 5px 5px 5px;
 }
-/*Diseño responsivo*/
+th, td{
+  padding: 5px;
+}
+thead{
+  background-color: #246355;
+  border-bottom: solid 2px #0F362D;
+  color:white;
+}
+tr:nth-child(even){
+  background-color: #ddd;
+}
+tr:hover td{
+  background-color:#0F362D;
+  color:green;
+}
 
-@media only screen and (max-width:800px) {
-  /* Para Tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
+/*Subtitulos de las recetas*/
+.SubtitleRecipe {
+  font-family: 'Pacifico';
+  text-shadow: 3px 2px 3px #aaa;
+  font-size:27px;
+  color:#00557F;
+  text-align:center;
+  text-decoration: underline;
+ }
+
+/*Cuadro de Video y preparación*/
+.Video_prep{
+  width: 66%;
+  background-color:lightgrey;
+  padding:4px;
+  border-radius:10px;
+  height:auto;
+  float:left;
 }
-@media only screen and (max-width:500px) {
-  /* Para Smartphones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+.Video{
+	position:Relative;
+  height:400px;
+	float:left;
+	width:100%;
+  padding: 10px;
+  border: 0px;
 }
+
+/*Parrafo de preparación de la receta*/
+.Preparacion{
+  position: Relative;
+	width: 100%;
+	text-align: left;
+  padding: 0px;
+  float:left;
+  }
+.Preparacion> ol{
+  font-family: 'arial', cursive;
+  font-size:17px;
+}
+.Preparacion>ol>li{
+  color:gray;
+  padding: 5px;
+  list-style:none;
+}
+.Preparacion>ol>li>label:hover{
+  color:black;
+  cursor: pointer;  
+}
+.Preparacion>ol>li>input:checked + label{
+  color:black;
+}
+
+/*Footer*/
+.footer{
+  width:100%;
+  margin-top:20px;
+  Background-color: lightgray;
+  Border-radius:15px 15px 0px 0px;
+  Padding: 10px;
+  float: left;
+  text-align:Center;
+}
+.Contacto{
+  width:33%;
+  float: left;
+  font-size:18px;
+  font-family: Arial;
+}
+.Enlaces{
+  width:33%;
+  float: left;
+  
+  font-size:18px;
+  font-family: Arial;
+}
+.Credits{
+  width:33%;
+  float: left;
+  
+  font-size:18px;
+  font-family: Arial;
+}
+.text_footer{
+  font-size:15px;
+  Padding: 13px 17px 13px 13px;
+  Border-radius:15px;
+  text-align:center;
+}
+.text_footer>li{
+  display: block;
+}
+.Boton_up{
+  Position:fixed;
+  Border-radius:0px;
+  cursor:pointer;
+  bottom:0px;
+  right:0px;
+  width:120px;
+  height:120px;
+}
+
+#banner{
+  width:88%;
+  height:500px;
+  margin-left:6%;
+}
+
+

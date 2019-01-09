@@ -4,23 +4,22 @@
 	<title>Cocina Tu Mismo</title>
 	<meta charset="UTF-8"/>
 	<meta name="description" content="Tarea 2 LMSGI"/>
-	<meta name="keywords" content="html 5, ejercicio, lmsgi, lmsgi02, aulaib, basic html 5, basic css3"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet"  href="css/myStyle.css" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
-    <link rel="stylesheet" href="css/fonts.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani|Thasadith" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/43cf016180/UntitledProject/style.css">
+    <link rel="stylesheet" href="fonts.css"/>
 </head>
   <!-- Icono arriba -->
-  <body>
+  <body class="cuerpo">
     <div>
-    <a href="#Cabecera"><svg  class="Boton_up">
+    <a href="#Cabecera">
+    <svg  class="Boton_up">
   <circle class="animated slideInUp"  cx="50" cy="50" r="45"
-  stroke="#002B40" stroke-width="4" fill="white"/>
-  <text class="animated slideInUp" fill="#002B40" font-size="59" font-family="Arial"
-  x="36" y="69">^</text>
-  <text class="animated slideInUp" fill="#002B40" font-size="15" font-family="Arial"
-  x="30" y="70">Arriba</text>
+  stroke="#FE9F00" stroke-width="4" fill="#F7F5F3"/>
+  <text class="animated slideInUp" fill="#333333" font-size="70" font-family="Rajdhani, sans-serif;" x="33" y="69">^</text>
+  <text class="animated slideInUp" fill="#333333" font-size="20" font-family="Thasadith"
+  x="26" y="70">Arriba</text>
 </svg></a>
     </div>
     <!-- Cabecera -->
@@ -66,7 +65,7 @@
     <div class="Content_Gen">
       <aside class="lateral_general">
       <canvas id="banner"  style="border:2px solid #000000;"></canvas>
-    <script>
+    <script>      
 var c = document.getElementById("banner");
 var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
@@ -81,6 +80,23 @@ var c = document.getElementById("banner");
 var ctx = c.getContext("2d");
 ctx.font = "20px Arial";
 ctx.fillText("Banner para Publicidad",50,80);
+   </script>
+        <canvas id="Redessociales"  style="border:2px solid #000000;"></canvas>
+    <script>      
+var c = document.getElementById("Redessociales");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(400,200);
+ctx.stroke();
+var c = document.getElementById("Redessociales");
+var ctx = c.getContext("2d");
+ctx.moveTo(300,0);
+ctx.lineTo(-400,350);
+ctx.stroke();
+var c = document.getElementById("Redessociales");
+var ctx = c.getContext("2d");
+ctx.font = "20px Arial";
+ctx.fillText("Espacio para las Redes sociales",8,80);
    </script>
     </aside>
       <div class="Contenido">
@@ -103,7 +119,7 @@ ctx.fillText("Banner para Publicidad",50,80);
         <div class="nucleo">
           <aside class="lateral">
 					  <p><img class="ImgReceta" src="img/Muesli.png" alt="Muesli Casero"/></p>
-					  <p class="enlaces">Visto en: <a href="https://www.elingenierococinero.com/muesli-casero-con-frutos-secos/">El ingeniero cocinero</a></p>
+					  <a href="https://www.elingenierococinero.com/muesli-casero-con-frutos-secos/"><p class="enlaces">Visto en:  El ingeniero cocinero</p></a>
 					  <table>
 					  <thead>
               <tr>
@@ -146,7 +162,7 @@ ctx.fillText("Banner para Publicidad",50,80);
 					</table>
 				  </aside>
           <div class="Video_prep"> 
-            <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+            <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				    <iframe class="Video" src="https://www.youtube.com/embed/di672RCTR7I">
 				    </iframe>
             <section class="Preparacion">  
@@ -182,7 +198,7 @@ ctx.fillText("Banner para Publicidad",50,80);
         <div class="nucleo">
           <aside class="lateral">
 					  <p><img class="ImgReceta" src="img/Porridge.png" alt="Porridge (gachas)"/></p>
-					  <p class="enlaces">Visto en: <a href="https://recetasveganas.net/recipes/porrigde-avena-fruta-chocolate">Recetas Veganas</a></p>
+					  <a href="https://recetasveganas.net/recipes/porrigde-avena-fruta-chocolate"><p class="enlaces">Visto en: Recetas Veganas</p></a>
 					  <table>
 					  <thead>
               <tr>
@@ -225,7 +241,7 @@ ctx.fillText("Banner para Publicidad",50,80);
 					</table>
 				  </aside>
           <div class="Video_prep"> 
-            <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+            <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				    <iframe class="Video" src="https://www.youtube.com/embed/e-HG88aFmP4"></iframe>
             <section class="Preparacion">  
               <h3 class="SubtitleRecipe">Preparación</h3>
@@ -268,7 +284,7 @@ ctx.fillText("Banner para Publicidad",50,80);
       <div class="nucleo">
         <aside class="lateral">
 					<p><img class="ImgReceta" src="img/Pavo.png" alt="Pavo Relleno"/></p>
-					<p class="enlaces">Visto en: <a href="https://www.cocinacaserayfacil.net/pavo-relleno-de-navidad-horno/">Cocina casera y fácil</a></p>
+					<a href="https://www.cocinacaserayfacil.net/pavo-relleno-de-navidad-horno/"><p class="enlaces">Visto en: Cocina casera y fácil</p></a>
 					<table>
 						<thead>
               <tr>
@@ -281,7 +297,7 @@ ctx.fillText("Banner para Publicidad",50,80);
 							<td>1ud de unos 7kg</td>
 						</tr>
 						<tr>
-							<td>Carne picada mitad cerdo mitad ternera</td>
+							<td>Carne picada <br> mitad cerdo mitad ternera</td>
 							<td>1kg</td>
 						</tr>
 						<tr>
@@ -319,7 +335,7 @@ ctx.fillText("Banner para Publicidad",50,80);
 					</table>
 				</aside>
         <div class="Video_prep"> 
-          <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+          <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				  <iframe class="Video" src="https://www.youtube.com/embed/TNkYOAJAFms">
 				  </iframe>
           <section class="Preparacion">  
@@ -390,7 +406,7 @@ ctx.fillText("Banner para Publicidad",50,80);
 					</table>
 				</aside>
         <div class="Video_prep"> 
-          <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+          <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				  <iframe class="Video" src="https://www.youtube.com/embed/mcs3qHg3S64">
 				  </iframe>
           
@@ -435,7 +451,7 @@ ctx.fillText("Banner para Publicidad",50,80);
       <div class="nucleo">
         <aside class="lateral">
 					<p><img class="ImgReceta" src="img/Crema.png" alt="Crema de Calabaza"/></p>
-					<p class="enlaces">Visto en: <a href="https://www.cocinacaserayfacil.net/crema-de-calabaza-receta/">Cocina casera y fácil</a> y <a href="https://www.youtube.com/channel/UCcciZypQDEWaayMbaUntbwQ">
+					<p class="enlaces" >Visto en: <a href="https://www.cocinacaserayfacil.net/crema-de-calabaza-receta/">Cocina casera y fácil</a> y <a href="https://www.youtube.com/channel/UCcciZypQDEWaayMbaUntbwQ">
 Las recetas tradicionales de cocina</a>
 </p>
 					<table>
@@ -488,7 +504,7 @@ Las recetas tradicionales de cocina</a>
 					</table>
 				</aside>
         <div class="Video_prep"> 
-          <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+          <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				  <iframe class="Video" src="https://www.youtube.com/embed/v1kBLvuXL_M">
 				  </iframe>
           <section class="Preparacion">  
@@ -524,7 +540,7 @@ Las recetas tradicionales de cocina</a>
       <div class="nucleo">
         <aside class="lateral">
 					<p><img class="ImgReceta" src="img/Sopa.png" alt="Sopa de cebolla"/></p>
-					<p class="enlaces">Visto en: <a href="https://www.cocinacaserayfacil.net/sopa-de-cebolla-receta/">Cocina casera y fácil</a></p>
+					<a href="https://www.cocinacaserayfacil.net/sopa-de-cebolla-receta/"><p class="enlaces">Visto en: Cocina casera y fácil</a></p>
 					<table>
 						<thead>
               <tr>
@@ -537,7 +553,7 @@ Las recetas tradicionales de cocina</a>
 							<td>2ud medianas</td>
 						</tr>
 						<tr>
-							<td>Caldo (carne o verduras)</td>
+							<td>Caldo <br>(carne o verduras)</td>
 							<td>1'5L </td>
 						</tr>
 						<tr>
@@ -571,7 +587,7 @@ Las recetas tradicionales de cocina</a>
 					</table>
 				</aside>
         <div class="Video_prep"> 
-          <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+          <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				  <iframe class="Video" src="https://www.youtube.com/embed/ay1QTL18Q18">
 				  </iframe>
           <section class="Preparacion">  
@@ -660,7 +676,7 @@ Las recetas tradicionales de cocina</a>
 					</table>
 				</aside>
         <div class="Video_prep"> 
-          <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+          <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				  <iframe class="Video" src="https://www.youtube.com/embed/1ln81L3vsuc">
 				  </iframe>
           <section class="Preparacion">  
@@ -729,7 +745,7 @@ Las recetas tradicionales de cocina</a>
 					</table>
 				</aside>
         <div class="Video_prep"> 
-          <h3 class="SubtitleRecipe"> Video explicativo:</h3>
+          <h3 class="SubtitleRecipe"> Video explicativo</h3>
 				  <iframe class="Video" src="https://www.youtube.com/embed/SX_p34jG_ww">
 				  </iframe>
           <section class="Preparacion">  

@@ -302,6 +302,8 @@ nav > ul > li > a:hover > span {
 	width:100%;
 	height:300px;
 	float:left;
+	border-radius: 10px 10px 10px 10px;
+	margin-botton:10px;
  }
 .enlaces{
   background-color: #FE9F00;

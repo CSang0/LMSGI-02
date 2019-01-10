@@ -200,11 +200,12 @@ nav > ul > li > a:hover > span {
   box-shadow: 5px 5px 5px #aaa;
    }
 .ImgParrafo{
-	width:220px;
-	height:180px;
+	width:150px;
+	height:150px;
 	float:left;
-	margin-right:25px;
-    padding: 15px 10px 10px 20px;
+	margin-left:40px;
+  margin-top:20px;
+  padding:10px;
 }
 
 /*Contenedor Recetas*/
